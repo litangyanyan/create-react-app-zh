@@ -94,19 +94,19 @@ Create React App 分为2个包:
 
 当你执行 `create-react-app` 时，它总是使用最新版的`react-scripts`创建项目， 因此在新创建的项目中将自动获得新的特性和改进。
 
-为了将已有项目升级到新版的`react-scripts`, [open the changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md)，找到你当前所处的版本(如果不确定的话可以到当前目录下的`package.json`中查看)，并应用新版本的迁移说明。
+为了将已有项目升级到新版的`react-scripts`, [打开更新日志](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md)，找到你当前所处的版本(如果不确定的话可以到当前目录下的`package.json`中查看)，并应用新版本的迁移说明。
 
-In most cases bumping the `react-scripts` version in `package.json` and running `npm install` in this folder should be enough, but it’s good to consult the [changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md) for potential breaking changes.
+大多数情况下，只需要改变`package.json`中`react-scripts`的版本号，并在当前目录下执行`npm install`命令就可以了。不过最好查阅[更新日志](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md) 检查是否有潜在的破坏性变化。
 
-We commit to keeping the breaking changes minimal so you can upgrade `react-scripts` painlessly.
+我们尽量把破坏性的变化保持在最小，已便你无痛升级`react-scripts`。
 
 ## 发送反馈
 
-We are always open to [your feedback](https://github.com/facebookincubator/create-react-app/issues).
+我们一向欢迎[您的反馈](https://github.com/facebookincubator/create-react-app/issues).
 
 ## 目录结构
 
-After creation, your project should look like this:
+创建项目后，它看起来应该是这样：
 
 ```
 my-app/
@@ -125,12 +125,12 @@ my-app/
     logo.svg
 ```
 
-For the project to build, **these files must exist with exact filenames**:
+对于要构建的项目，**以下文件必须以准确的文件名存在**:
 
 * `public/index.html` is the page template;
 * `src/index.js` is the JavaScript entry point.
 
-You can delete or rename the other files.
+你可以删除或重命名其他文件。
 
 You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack.<br>
 You need to **put any JS and CSS files inside `src`**, or Webpack won’t see them.
